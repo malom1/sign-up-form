@@ -9,47 +9,53 @@
 <body>
     <div class="main">
         <div class="left">
-            <h1>Sign Up</h1>
+            <h1>CAFE MO</h1>
         </div>
         <div class="right">
             <div class="top-container">
-                <p class="header-text">This is not a real online service!
+                <p class="top-text">This is not a real online service!
                     You know you need something like this 
                     in your life to help you realize your deepest dreams.
                     Sign up now to get started.
                 </p>
-                <p>You know you want to.</p>
+                <p class="bottom-text">
+                    You know you want to.
+                </p>
             </div>
             <div class="form-container">
-                <form action="#" method="post">
-                    <div class="first-name">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name">
+                <form action="#" method="post" class="form-main-div">
+                    <div class="form-left">
+                        <div class="form-div">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" placeholder="John">
+                        </div>
+                        <div class="form-div">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="john@email.com">
+                        </div>
+                        <div class="form-div">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
                     </div>
-                    <div class="last-name">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
-                    </div>
-                    <div class="email">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="phone">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="number" id="phone-number">
-                    </div>
-                    <div class="password">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" required>
-                    </div>
-                    <div class="confirm-password">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" required>
+                    <div class="form-right">
+                        <div class="form-div">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" placeholder="Doe">
+                        </div>
+                        <div class="form-div">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" min="5" max="10">
+                        </div>
+                        <div class="form-div">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="create-account">
-                <button type="submit">Create Account</button>
+                <button class="submit-btn" type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>

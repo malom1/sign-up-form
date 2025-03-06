@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main{
@@ -12,12 +13,19 @@
 
 .left{
     display: flex;
+    justify-content: center;
+    align-items:center;
     background-image: url(image/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 45vw;
     color: white;
+}
 
+h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.481);
 }
 
 .right{
@@ -28,7 +36,19 @@
 .top-container{
     height: 40vh;
     border: 1px solid gainsboro;
-    background-color: lightgrey;
+}
+
+.top-text{
+    font-size: 1.5rem;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.bottom-text{
+    font-size: 1.5rem;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 
 .form-container{
@@ -36,10 +56,58 @@
     border: 1px solid gainsboro;
 }
 
+.form-main-div{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-left{
+    padding: 12px;
+}
+
+.form-right{
+    padding: 12px;
+}
+
+input{
+    width: 200px;
+    border-color: 1px solid #E5E7EB;
+    height: 20px;
+    border-radius: 3px;
+}
+
+input:focus{
+    border: 1px solid blue;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
 
 .create-account{
     height: 30vh;
     border: 1px solid gainsboro;
-    background-color: lightgrey;
+    background-color: rgba(211, 211, 211, 0.024);
+    padding: 30px;
+}
 
+button{
+    background-color:rgba(151, 122, 62, 0.894);
+    color: rgba(0, 0, 0, 0.902);
+}
+
+.submit-btn{
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
 }
